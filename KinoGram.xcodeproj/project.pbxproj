@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F35BDEA2964831B009E7A31 /* KinoGramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BDE92964831B009E7A31 /* KinoGramApp.swift */; };
+		0F35BDEC2964831B009E7A31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BDEB2964831B009E7A31 /* ContentView.swift */; };
+		0F35BDEE2964831C009E7A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F35BDED2964831C009E7A31 /* Assets.xcassets */; };
+		0F35BDF12964831C009E7A31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F35BDF02964831C009E7A31 /* Preview Assets.xcassets */; };
+		0F35BDF929648379009E7A31 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BDF829648379009E7A31 /* TabBarView.swift */; };
+		0F35BDFB29648386009E7A31 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BDFA29648386009E7A31 /* TabBarButton.swift */; };
+		0F35BDFD29648396009E7A31 /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BDFC29648396009E7A31 /* TabBarButtonView.swift */; };
+		0F35BE00296483B3009E7A31 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BDFF296483B3009E7A31 /* Extensions.swift */; };
+		0F35BE02296483C3009E7A31 /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BE01296483C3009E7A31 /* AppStateManager.swift */; };
+		0F35BE07296484A7009E7A31 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BE06296484A7009E7A31 /* MainView.swift */; };
+		0F35BE0929648A03009E7A31 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BE0829648A03009E7A31 /* FeedView.swift */; };
+		0F35BE0C29648AA1009E7A31 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BE0B29648AA1009E7A31 /* PostView.swift */; };
+		0F35BE0F29648D50009E7A31 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BE0E29648D50009E7A31 /* PostModel.swift */; };
+		0F35BE1129648F5D009E7A31 /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BE1029648F5D009E7A31 /* PostArrayObject.swift */; };
+		0F35BE132964984A009E7A31 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BE122964984A009E7A31 /* CommentsView.swift */; };
+		0F35BE152964A274009E7A31 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BE142964A274009E7A31 /* MessageView.swift */; };
+		0F35BE172964A328009E7A31 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BE162964A328009E7A31 /* CommentModel.swift */; };
+		0F35BE192964A651009E7A31 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BE182964A651009E7A31 /* BrowseView.swift */; };
+		0F35BE1B2964A6DC009E7A31 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BE1A2964A6DC009E7A31 /* CarouselView.swift */; };
+		0F35BE1D2964AC9A009E7A31 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F35BE1C2964AC9A009E7A31 /* ImageGridView.swift */; };
+		0F99BE7929670524005135B9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F99BE7829670524005135B9 /* AuthService.swift */; };
+		0F99BE7C29671988005135B9 /* Enums & Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F99BE7B29671988005135B9 /* Enums & Structs.swift */; };
+		0F99BE7E296727AE005135B9 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F99BE7D296727AE005135B9 /* ImageManager.swift */; };
+		0FB9DA9D2969B1EF00C0CF6F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB9DA9C2969B1EF00C0CF6F /* DataService.swift */; };
+		0FCCB58F2964B12200250BA2 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB58E2964B12200250BA2 /* UploadView.swift */; };
+		0FCCB5912964BBAC00250BA2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB5902964BBAC00250BA2 /* ImagePicker.swift */; };
+		0FCCB5932964C33500250BA2 /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB5922964C33500250BA2 /* PostImageView.swift */; };
+		0FCCB5952964CE4F00250BA2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB5942964CE4F00250BA2 /* ProfileView.swift */; };
+		0FCCB5972964CFF600250BA2 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB5962964CFF600250BA2 /* ProfileHeaderView.swift */; };
+		0FCCB5992964D52C00250BA2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB5982964D52C00250BA2 /* SettingsView.swift */; };
+		0FCCB59B2964D65B00250BA2 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB59A2964D65B00250BA2 /* SettingsLabelView.swift */; };
+		0FCCB59D2964D84B00250BA2 /* SettingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB59C2964D84B00250BA2 /* SettingRowView.swift */; };
+		0FCCB59F2964E4AC00250BA2 /* SettingsEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB59E2964E4AC00250BA2 /* SettingsEditTextView.swift */; };
+		0FCCB5A12964E8BE00250BA2 /* SettingsEditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB5A02964E8BE00250BA2 /* SettingsEditImageView.swift */; };
+		0FCCB5A32964F61100250BA2 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB5A22964F61100250BA2 /* SignUpView.swift */; };
+		0FCCB5A52964FA1800250BA2 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB5A42964FA1800250BA2 /* OnboardingView.swift */; };
+		0FCCB5A72964FB8200250BA2 /* SignInWithAppleButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB5A62964FB8200250BA2 /* SignInWithAppleButtonCustom.swift */; };
+		0FCCB5A92965021900250BA2 /* OnboardingViewPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB5A82965021900250BA2 /* OnboardingViewPart2.swift */; };
+		0FCCB5AB2965AFE500250BA2 /* LikeAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB5AA2965AFE500250BA2 /* LikeAnimationView.swift */; };
+		0FCCB5AD2965EB9200250BA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCB5AC2965EB9200250BA2 /* GoogleService-Info.plist */; };
+		0FCCB5B42965FD4C00250BA2 /* SignInWithGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB5B32965FD4C00250BA2 /* SignInWithGoogle.swift */; };
+		0FCCB5BB296643B500250BA2 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCCB5BA296643B500250BA2 /* Application.swift */; };
+		0FCCB5BD2966505000250BA2 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FCCB5BC2966505000250BA2 /* credentials.plist */; };
+		5016F7B463D9D3547EE1A691 /* Pods_KinoGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389FD022A4046C91173321D5 /* Pods_KinoGram.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F35BDE62964831B009E7A31 /* KinoGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinoGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F35BDE92964831B009E7A31 /* KinoGramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinoGramApp.swift; sourceTree = "<group>"; };
+		0F35BDEB2964831B009E7A31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0F35BDED2964831C009E7A31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F35BDF02964831C009E7A31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0F35BDF829648379009E7A31 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		0F35BDFA29648386009E7A31 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		0F35BDFC29648396009E7A31 /* TabBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
+		0F35BDFF296483B3009E7A31 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0F35BE01296483C3009E7A31 /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
+		0F35BE06296484A7009E7A31 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0F35BE0829648A03009E7A31 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		0F35BE0B29648AA1009E7A31 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		0F35BE0E29648D50009E7A31 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		0F35BE1029648F5D009E7A31 /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
+		0F35BE122964984A009E7A31 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		0F35BE142964A274009E7A31 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		0F35BE162964A328009E7A31 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		0F35BE182964A651009E7A31 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		0F35BE1A2964A6DC009E7A31 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		0F35BE1C2964AC9A009E7A31 /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
+		0F99BE7829670524005135B9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		0F99BE7B29671988005135B9 /* Enums & Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enums & Structs.swift"; sourceTree = "<group>"; };
+		0F99BE7D296727AE005135B9 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		0FB9DA9C2969B1EF00C0CF6F /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		0FCCB58E2964B12200250BA2 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
+		0FCCB5902964BBAC00250BA2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		0FCCB5922964C33500250BA2 /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
+		0FCCB5942964CE4F00250BA2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0FCCB5962964CFF600250BA2 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		0FCCB5982964D52C00250BA2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0FCCB59A2964D65B00250BA2 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
+		0FCCB59C2964D84B00250BA2 /* SettingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRowView.swift; sourceTree = "<group>"; };
+		0FCCB59E2964E4AC00250BA2 /* SettingsEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditTextView.swift; sourceTree = "<group>"; };
+		0FCCB5A02964E8BE00250BA2 /* SettingsEditImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditImageView.swift; sourceTree = "<group>"; };
+		0FCCB5A22964F61100250BA2 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		0FCCB5A42964FA1800250BA2 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		0FCCB5A62964FB8200250BA2 /* SignInWithAppleButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButtonCustom.swift; sourceTree = "<group>"; };
+		0FCCB5A82965021900250BA2 /* OnboardingViewPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPart2.swift; sourceTree = "<group>"; };
+		0FCCB5AA2965AFE500250BA2 /* LikeAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimationView.swift; sourceTree = "<group>"; };
+		0FCCB5AC2965EB9200250BA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0FCCB5B22965FD2D00250BA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0FCCB5B32965FD4C00250BA2 /* SignInWithGoogle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithGoogle.swift; sourceTree = "<group>"; };
+		0FCCB5BA296643B500250BA2 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		0FCCB5BC2966505000250BA2 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		2162F31CC7ADF1D1DAAC775D /* Pods-KinoGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinoGram.debug.xcconfig"; path = "Target Support Files/Pods-KinoGram/Pods-KinoGram.debug.xcconfig"; sourceTree = "<group>"; };
+		389FD022A4046C91173321D5 /* Pods_KinoGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinoGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		990DB65B8F7A24FFFBF8CABB /* Pods-KinoGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinoGram.release.xcconfig"; path = "Target Support Files/Pods-KinoGram/Pods-KinoGram.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F35BDE32964831B009E7A31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5016F7B463D9D3547EE1A691 /* Pods_KinoGram.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F35BDDD2964831B009E7A31 = {
+			isa = PBXGroup;
+			children = (
+				0F35BDE82964831B009E7A31 /* KinoGram */,
+				0F35BDE72964831B009E7A31 /* Products */,
+				C6F05EBA1E30DA19AFABB815 /* Pods */,
+				D0BE89A0EB9456C43C153898 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0F35BDE72964831B009E7A31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F35BDE62964831B009E7A31 /* KinoGram.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F35BDE82964831B009E7A31 /* KinoGram */ = {
+			isa = PBXGroup;
+			children = (
+				0F99BE7A29671972005135B9 /* Helpers */,
+				0FCCB5B22965FD2D00250BA2 /* Info.plist */,
+				0FCCB5BC2966505000250BA2 /* credentials.plist */,
+				0FCCB5AC2965EB9200250BA2 /* GoogleService-Info.plist */,
+				0FCCB5AE2965F05100250BA2 /* Services */,
+				0F35BE0D29648D3F009E7A31 /* Model */,
+				0F35BE0A29648A91009E7A31 /* SubViews */,
+				0F35BE032964846B009E7A31 /* Views */,
+				0F35BDFE296483A0009E7A31 /* Extensions */,
+				0F35BDF729648364009E7A31 /* TabBar */,
+				0F35BDE92964831B009E7A31 /* KinoGramApp.swift */,
+				0F35BDEB2964831B009E7A31 /* ContentView.swift */,
+				0F35BDED2964831C009E7A31 /* Assets.xcassets */,
+				0F35BDEF2964831C009E7A31 /* Preview Content */,
+			);
+			path = KinoGram;
+			sourceTree = "<group>";
+		};
+		0F35BDEF2964831C009E7A31 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0F35BDF02964831C009E7A31 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0F35BDF729648364009E7A31 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0F35BDF829648379009E7A31 /* TabBarView.swift */,
+				0F35BDFA29648386009E7A31 /* TabBarButton.swift */,
+				0F35BDFC29648396009E7A31 /* TabBarButtonView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		0F35BDFE296483A0009E7A31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0F35BDFF296483B3009E7A31 /* Extensions.swift */,
+				0F35BE01296483C3009E7A31 /* AppStateManager.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0F35BE032964846B009E7A31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F35BE06296484A7009E7A31 /* MainView.swift */,
+				0F35BE0829648A03009E7A31 /* FeedView.swift */,
+				0F35BE122964984A009E7A31 /* CommentsView.swift */,
+				0F35BE182964A651009E7A31 /* BrowseView.swift */,
+				0FCCB58E2964B12200250BA2 /* UploadView.swift */,
+				0FCCB5922964C33500250BA2 /* PostImageView.swift */,
+				0FCCB5942964CE4F00250BA2 /* ProfileView.swift */,
+				0FCCB5982964D52C00250BA2 /* SettingsView.swift */,
+				0FCCB59E2964E4AC00250BA2 /* SettingsEditTextView.swift */,
+				0FCCB5A02964E8BE00250BA2 /* SettingsEditImageView.swift */,
+				0FCCB5A22964F61100250BA2 /* SignUpView.swift */,
+				0FCCB5A42964FA1800250BA2 /* OnboardingView.swift */,
+				0FCCB5A82965021900250BA2 /* OnboardingViewPart2.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0F35BE0A29648A91009E7A31 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				0F35BE0B29648AA1009E7A31 /* PostView.swift */,
+				0F35BE142964A274009E7A31 /* MessageView.swift */,
+				0F35BE1A2964A6DC009E7A31 /* CarouselView.swift */,
+				0F35BE1C2964AC9A009E7A31 /* ImageGridView.swift */,
+				0FCCB5902964BBAC00250BA2 /* ImagePicker.swift */,
+				0FCCB5962964CFF600250BA2 /* ProfileHeaderView.swift */,
+				0FCCB59A2964D65B00250BA2 /* SettingsLabelView.swift */,
+				0FCCB59C2964D84B00250BA2 /* SettingRowView.swift */,
+				0FCCB5A62964FB8200250BA2 /* SignInWithAppleButtonCustom.swift */,
+				0FCCB5AA2965AFE500250BA2 /* LikeAnimationView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		0F35BE0D29648D3F009E7A31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F35BE0E29648D50009E7A31 /* PostModel.swift */,
+				0F35BE1029648F5D009E7A31 /* PostArrayObject.swift */,
+				0F35BE162964A328009E7A31 /* CommentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F99BE7729670516005135B9 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				0F99BE7829670524005135B9 /* AuthService.swift */,
+				0FB9DA9C2969B1EF00C0CF6F /* DataService.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		0F99BE7A29671972005135B9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0F99BE7B29671988005135B9 /* Enums & Structs.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0FCCB5AE2965F05100250BA2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0F99BE7729670516005135B9 /* Firebase */,
+				0FCCB5B52966393A00250BA2 /* Utilities */,
+				0FCCB5AF2965F05A00250BA2 /* SingInProviders */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0FCCB5AF2965F05A00250BA2 /* SingInProviders */ = {
+			isa = PBXGroup;
+			children = (
+				0FCCB5B32965FD4C00250BA2 /* SignInWithGoogle.swift */,
+			);
+			path = SingInProviders;
+			sourceTree = "<group>";
+		};
+		0FCCB5B52966393A00250BA2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0FCCB5BA296643B500250BA2 /* Application.swift */,
+				0F99BE7D296727AE005135B9 /* ImageManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C6F05EBA1E30DA19AFABB815 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2162F31CC7ADF1D1DAAC775D /* Pods-KinoGram.debug.xcconfig */,
+				990DB65B8F7A24FFFBF8CABB /* Pods-KinoGram.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0BE89A0EB9456C43C153898 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				389FD022A4046C91173321D5 /* Pods_KinoGram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F35BDE52964831B009E7A31 /* KinoGram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F35BDF42964831C009E7A31 /* Build configuration list for PBXNativeTarget "KinoGram" */;
+			buildPhases = (
+				D16010AB0A8BB6E829411F3B /* [CP] Check Pods Manifest.lock */,
+				0F35BDE22964831B009E7A31 /* Sources */,
+				0F35BDE32964831B009E7A31 /* Frameworks */,
+				0F35BDE42964831B009E7A31 /* Resources */,
+				BB95DD948D489A10020FCB59 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KinoGram;
+			productName = KinoGram;
+			productReference = 0F35BDE62964831B009E7A31 /* KinoGram.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F35BDDE2964831B009E7A31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0F35BDE52964831B009E7A31 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 0F35BDE12964831B009E7A31 /* Build configuration list for PBXProject "KinoGram" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0F35BDDD2964831B009E7A31;
+			productRefGroup = 0F35BDE72964831B009E7A31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F35BDE52964831B009E7A31 /* KinoGram */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F35BDE42964831B009E7A31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F35BDF12964831C009E7A31 /* Preview Assets.xcassets in Resources */,
+				0FCCB5BD2966505000250BA2 /* credentials.plist in Resources */,
+				0FCCB5AD2965EB9200250BA2 /* GoogleService-Info.plist in Resources */,
+				0F35BDEE2964831C009E7A31 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB95DD948D489A10020FCB59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KinoGram/Pods-KinoGram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KinoGram/Pods-KinoGram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KinoGram/Pods-KinoGram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D16010AB0A8BB6E829411F3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KinoGram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F35BDE22964831B009E7A31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FCCB5BB296643B500250BA2 /* Application.swift in Sources */,
+				0FCCB59F2964E4AC00250BA2 /* SettingsEditTextView.swift in Sources */,
+				0F35BE1129648F5D009E7A31 /* PostArrayObject.swift in Sources */,
+				0F35BDEC2964831B009E7A31 /* ContentView.swift in Sources */,
+				0FCCB5A52964FA1800250BA2 /* OnboardingView.swift in Sources */,
+				0F35BE0929648A03009E7A31 /* FeedView.swift in Sources */,
+				0F35BE07296484A7009E7A31 /* MainView.swift in Sources */,
+				0F35BE02296483C3009E7A31 /* AppStateManager.swift in Sources */,
+				0F99BE7C29671988005135B9 /* Enums & Structs.swift in Sources */,
+				0F35BE00296483B3009E7A31 /* Extensions.swift in Sources */,
+				0FCCB5A12964E8BE00250BA2 /* SettingsEditImageView.swift in Sources */,
+				0F99BE7E296727AE005135B9 /* ImageManager.swift in Sources */,
+				0F35BDFB29648386009E7A31 /* TabBarButton.swift in Sources */,
+				0F35BE1B2964A6DC009E7A31 /* CarouselView.swift in Sources */,
+				0FCCB5A72964FB8200250BA2 /* SignInWithAppleButtonCustom.swift in Sources */,
+				0F35BE172964A328009E7A31 /* CommentModel.swift in Sources */,
+				0FCCB5992964D52C00250BA2 /* SettingsView.swift in Sources */,
+				0F35BE192964A651009E7A31 /* BrowseView.swift in Sources */,
+				0F35BDF929648379009E7A31 /* TabBarView.swift in Sources */,
+				0FCCB5972964CFF600250BA2 /* ProfileHeaderView.swift in Sources */,
+				0F35BDEA2964831B009E7A31 /* KinoGramApp.swift in Sources */,
+				0F35BE1D2964AC9A009E7A31 /* ImageGridView.swift in Sources */,
+				0F35BE0C29648AA1009E7A31 /* PostView.swift in Sources */,
+				0F35BE132964984A009E7A31 /* CommentsView.swift in Sources */,
+				0F35BDFD29648396009E7A31 /* TabBarButtonView.swift in Sources */,
+				0FCCB59D2964D84B00250BA2 /* SettingRowView.swift in Sources */,
+				0FCCB5932964C33500250BA2 /* PostImageView.swift in Sources */,
+				0FB9DA9D2969B1EF00C0CF6F /* DataService.swift in Sources */,
+				0F35BE152964A274009E7A31 /* MessageView.swift in Sources */,
+				0FCCB5912964BBAC00250BA2 /* ImagePicker.swift in Sources */,
+				0FCCB58F2964B12200250BA2 /* UploadView.swift in Sources */,
+				0FCCB5AB2965AFE500250BA2 /* LikeAnimationView.swift in Sources */,
+				0F99BE7929670524005135B9 /* AuthService.swift in Sources */,
+				0FCCB5A92965021900250BA2 /* OnboardingViewPart2.swift in Sources */,
+				0FCCB59B2964D65B00250BA2 /* SettingsLabelView.swift in Sources */,
+				0FCCB5A32964F61100250BA2 /* SignUpView.swift in Sources */,
+				0FCCB5B42965FD4C00250BA2 /* SignInWithGoogle.swift in Sources */,
+				0FCCB5952964CE4F00250BA2 /* ProfileView.swift in Sources */,
+				0F35BE0F29648D50009E7A31 /* PostModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0F35BDF22964831C009E7A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0F35BDF32964831C009E7A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F35BDF52964831C009E7A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2162F31CC7ADF1D1DAAC775D /* Pods-KinoGram.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KinoGram/Preview Content\"";
+				DEVELOPMENT_TEAM = MK4UBWJ2G8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KinoGram/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera at the user's request to take a photo";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This allows the app to access the photo library to import or save a photo at the user's request";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.giorgiSamkharadzer.CugoLand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0F35BDF62964831C009E7A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 990DB65B8F7A24FFFBF8CABB /* Pods-KinoGram.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KinoGram/Preview Content\"";
+				DEVELOPMENT_TEAM = MK4UBWJ2G8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KinoGram/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera at the user's request to take a photo";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This allows the app to access the photo library to import or save a photo at the user's request";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.giorgiSamkharadzer.CugoLand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F35BDE12964831B009E7A31 /* Build configuration list for PBXProject "KinoGram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F35BDF22964831C009E7A31 /* Debug */,
+				0F35BDF32964831C009E7A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F35BDF42964831C009E7A31 /* Build configuration list for PBXNativeTarget "KinoGram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F35BDF52964831C009E7A31 /* Debug */,
+				0F35BDF62964831C009E7A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F35BDDE2964831B009E7A31 /* Project object */;
+}
