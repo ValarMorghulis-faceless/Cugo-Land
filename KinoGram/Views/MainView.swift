@@ -17,10 +17,10 @@ struct MainView: View {
     func correctViewForState() -> some View {
         switch appState.selectedTab {
         case .feed:
-            let view = FeedView(posts: PostArrayObject(userID: currentUserID!, shuffled: false), title: "Feed")
+            let view = FeedView(posts: PostArrayObject(userID: currentUserID ?? "ASD", shuffled: false), title: "Feed")
             return AnyView(view)
         case .search:
-            let view = BrowseView(posts: PostArrayObject(userID: currentUserID!, shuffled: true))
+            let view = BrowseView(posts: PostArrayObject(userID: currentUserID ?? "asd", shuffled: true))
             return AnyView(view)
         case .messages:
             let view = Text("Messages")
@@ -46,14 +46,13 @@ struct MainView: View {
                   .opacity(0.35)
                   .edgesIgnoringSafeArea(.vertical)
               
-             
               
+             
               VStack {
                //  Spacer()
                   correctViewForState()
                      
-                  Spacer()
-               
+                  
                   HStack() {
                       
                       TabBarButtonView(type: .feed, text: .feed)
@@ -72,10 +71,8 @@ struct MainView: View {
                   .padding(.bottom, -15)
                   .overlay(Rectangle().frame(width: nil, height: 1, alignment: .top).foregroundColor(Color.gray.opacity(0.3)), alignment: .top)
 
-                  
-                  
-                 
               }
+              .ignoresSafeArea(.keyboard,edges: .bottom)
               
 
               

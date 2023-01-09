@@ -69,7 +69,7 @@ struct OnboardingView: View {
                         
                         
                       //  showOnboardingPart2.toggle()
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                             AuthService.instance.checkIfUserExistsInDatabase(userID: userID) { isNewUser, error in
                                 if isNewUser!{
                                     ProgressHUD.dismiss()

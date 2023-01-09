@@ -6,14 +6,14 @@
 //
 
 import SwiftUI
-
+import ProgressHUD
 struct ProfileView: View {
     var isMyprofile: Bool
     
     @State var profileDisplayName: String
     var profileUserID: String
     @State var profileImage: UIImage = UIImage(named: "logo.loading")!
-    
+    @State var profileBio: String = ""
     var posts: PostArrayObject
     
     @State var showSetting: Bool = false
@@ -22,7 +22,7 @@ struct ProfileView: View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 LazyVStack {
-                    ProfileHeaderView(profileDisplayName: $profileDisplayName, profileImage: $profileImage)
+                    ProfileHeaderView(profileDisplayName: $profileDisplayName, profileImage: $profileImage, postArray: posts, profileBio: $profileBio)
                     Divider()
                     ImageGridView(posts: posts)
                 }
@@ -43,10 +43,10 @@ struct ProfileView: View {
                 )
                 .onAppear {
                     getProfileImage()
-                    print(profileUserID)
+                    getAdditionalProfileInfo()
                 }
                 .sheet(isPresented: $showSetting) {
-                    SettingsView()
+                    SettingsView(userDisplayName: $profileDisplayName, userBio: $profileBio, userProfilePicture: $profileImage)
                 }
             }
         }
@@ -57,6 +57,20 @@ struct ProfileView: View {
         
             if image != nil {
                 self.profileImage = image!
+            }
+        }
+    }
+    func getAdditionalProfileInfo() {
+        AuthService.instance.getUserInfo(forUserID: profileUserID) { name, bio, error in
+            if error != nil {
+                ProgressHUD.showError(error?.localizedDescription)
+                print(error?.localizedDescription)
+            }
+            if let displayName = name {
+                self.profileDisplayName = name!
+            }
+            if let bio = bio {
+                self.profileBio = bio
             }
         }
     }

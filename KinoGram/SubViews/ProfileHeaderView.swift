@@ -11,6 +11,9 @@ struct ProfileHeaderView: View {
     
     @Binding var profileDisplayName: String
     @Binding var profileImage: UIImage
+    @ObservedObject var postArray: PostArrayObject
+    @Binding var profileBio: String
+
     
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
@@ -28,16 +31,21 @@ struct ProfileHeaderView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
             // MARK: BIO
-            Text("This is the area of biooo")
-                .font(.body)
-                .fontWeight(.regular)
-                .multilineTextAlignment(.center)
+            
+            if profileBio != "" {
+                Text(profileBio)
+                    .font(.body)
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+            }
+            
+       
             
             
             HStack(alignment: .center, spacing: nil) {
                 // MARK: POSTS
                 VStack(alignment: .center, spacing: 5) {
-                    Text("5")
+                    Text(postArray.postCountString)
                         .font(.title2)
                         .fontWeight(.bold)
                     Capsule()
@@ -49,7 +57,7 @@ struct ProfileHeaderView: View {
                 }
                 // MARK: LIKES
                 VStack(alignment: .center, spacing: 5) {
-                    Text("20")
+                    Text(postArray.likeCountString)
                         .font(.title2)
                         .fontWeight(.bold)
                     Capsule()
@@ -74,6 +82,6 @@ struct ProfileHeaderView_Previews: PreviewProvider {
     
     
     static var previews: some View {
-        ProfileHeaderView(profileDisplayName: $name, profileImage: $image)
+        ProfileHeaderView(profileDisplayName: $name, profileImage: $image, postArray: PostArrayObject(userID: "ASAFASf", shuffled: false), profileBio: $name)
     }
 }

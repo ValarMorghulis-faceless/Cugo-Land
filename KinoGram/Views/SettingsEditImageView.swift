@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import ProgressHUD
 
 struct SettingsEditImageView: View {
     @State var title: String
     @State var description: String
-    @State var selectedImage: UIImage
+    @State var selectedImage: UIImage // Image shown on this screen
+    @Binding var profileImage: UIImage // Image shown on the profile
     @State var sourceType: UIImagePickerController.SourceType = UIImagePickerController.SourceType.photoLibrary
     @State var showsheet: Bool = false
-    
+    @AppStorage(CurrentUserDefaults.userID) var currentUserID : String?
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
            NavigationView {
                VStack(alignment: .leading, spacing: 20) {
@@ -46,7 +49,7 @@ struct SettingsEditImageView: View {
                    })
                 
                 Button(action: {
-                  
+                  saveImage()
                 }, label: {
                     Text("SAVE")
                         .font(.title3)
@@ -65,10 +68,29 @@ struct SettingsEditImageView: View {
             .navigationTitle(title)
         }
     }
+    
+    // MARK: FUNCTIONS
+    
+    func saveImage() {
+        // Update the UI of the profile
+        
+        guard let userID = currentUserID else { return }
+        self.profileImage = selectedImage
+        
+        // Update profile image in database
+        ImageManager.instance.uploadProfileImage(userID: userID, image: selectedImage)
+        presentationMode.wrappedValue.dismiss()
+        ProgressHUD.showSuccess("Success")
+    }
+    
+    
 }
 
 struct SettingsEditImageView_Previews: PreviewProvider {
+    
+    @State static var proimage: UIImage = UIImage(named: "dog1")!
+    
     static var previews: some View {
-        SettingsEditImageView(title: "Title", description: "Description", selectedImage: UIImage(named: "dog1")!)
+        SettingsEditImageView(title: "Title", description: "Description", selectedImage: UIImage(named: "dog1")!, profileImage: $proimage)
     }
 }

@@ -139,4 +139,44 @@ class AuthService {
 
     }
     
+    // MARK: UPDATE USER FUNCTIONS
+    
+    func updateUserDisplayName(userID: String, displayName: String, handler: @escaping (_ success: Bool) -> Void) {
+        let data: [String:Any] = [
+        
+            DataBaseUserField.displayName : displayName
+        
+        ]
+        
+        REF_USERS.document(userID).updateData(data) { error in
+            if error != nil {
+                print(error?.localizedDescription)
+                handler(false)
+                return
+            } else {
+                handler(true)
+                return
+            }
+            
+        }
+    }
+    
+    func updateUserBio(userID: String, bio: String, handler: @escaping (_ success: Bool) -> Void) {
+        let data: [String:Any] = [
+            DataBaseUserField.bio : bio
+        ]
+        
+        REF_USERS.document(userID).updateData(data) { error in
+            if error != nil {
+                print(error?.localizedDescription)
+                handler(false)
+                return
+            } else {
+                handler(true)
+                return
+            }
+            
+        }
+    }
+    
 }

@@ -21,17 +21,30 @@ class ImageManager {
         // Functions we call from other places in the app
     func uploadProfileImage(userID: String, image: UIImage) {
         let path = getProfileImagePath(userID: userID)
-        uploadImage(path: path, image: image) { _ in }
+        DispatchQueue.global(qos: .userInteractive).async {
+            self.uploadImage(path: path, image: image) { _ in }
+
+        }
     }
     func uploadPostImage(postID: String, image: UIImage, handler: @escaping(_ error: Error?) -> Void) {
         
         let path = getPostImagePath(postID: postID)
         // SAVE IMAGE TO PATH
-        uploadImage(path: path, image: image) { error in
-            if error != nil {
-                print(error?.localizedDescription)
+        DispatchQueue.global(qos: .userInteractive).async {
+            self.uploadImage(path: path, image: image) { error in
+                if error != nil {
+                    print(error?.localizedDescription)
+                    
+                }
+                    DispatchQueue.main.async {
+                        handler(error)
+
+                    }
+                   
+                
             }
         }
+      
         
     }
     
@@ -50,16 +63,31 @@ class ImageManager {
     
     func downloadProfileImage(userID: String, handler: @escaping (_ image: UIImage?) -> Void) {
         let path = getProfileImagePath(userID: userID)
-        downloadImage(path: path) { image in
-            handler(image)
+        
+        DispatchQueue.global(qos: .userInteractive).async {
+            self.downloadImage(path: path) { image in
+                DispatchQueue.main.async {
+                    handler(image)
+
+                }
+            }
         }
+        
+       
     }
     
     func downloadPostImage(postID: String, handler: @escaping (_ image: UIImage?) -> Void) {
         let path = getPostImagePath(postID: postID)
-        downloadImage(path: path) { image in
-            handler(image)
+        
+        DispatchQueue.global(qos: .userInteractive).async {
+            self.downloadImage(path: path) { image in
+                DispatchQueue.main.async {
+                    handler(image)
+                }
+            }
         }
+        
+        
     }
     
     // MARK: PRIVATE FUNCTIONS
