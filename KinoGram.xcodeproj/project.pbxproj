@@ -239,6 +239,7 @@
 				0F99BE7829670524005135B9 /* AuthService.swift */,
 				0FB9DA9C2969B1EF00C0CF6F /* DataService.swift */,
 				0F920D08296B9E0F00BD72A8 /* AnalyticsService.swift */,
+				0FCCB5B32965FD4C00250BA2 /* SignInWithGoogle.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -265,7 +266,6 @@
 		0FCCB5AF2965F05A00250BA2 /* SingInProviders */ = {
 			isa = PBXGroup;
 			children = (
-				0FCCB5B32965FD4C00250BA2 /* SignInWithGoogle.swift */,
 			);
 			path = SingInProviders;
 			sourceTree = "<group>";

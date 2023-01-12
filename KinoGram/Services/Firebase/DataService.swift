@@ -231,4 +231,11 @@ class DataService {
         
         REF_POSTS.document(postID).updateData(data)
     }
+    // MARK: DELETE FUNCTIONS
+    
+    func deletePost(postID: String) {
+        
+        REF_POSTS.document(postID).delete()
+    }
+    
 }

@@ -29,8 +29,8 @@ struct MainView: View {
             let view = UploadView()
             return AnyView(view)
         case .profile:
-            if let userID = currentUserID, let dispayname = currentUserDisplayName {
-                return (AnyView(ProfileView(isMyprofile: true, profileDisplayName: dispayname, profileUserID: userID, posts: PostArrayObject(userID: userID))))
+            if let userID = currentUserID, let displayname = currentUserDisplayName {
+                return (AnyView(ProfileView(isMyprofile: true, profileDisplayName: displayname, profileUserID: userID, posts: PostArrayObject(userID: userID))))
             } else {
                 return (AnyView(SignUpView()))
             }
@@ -40,7 +40,6 @@ struct MainView: View {
     }
     
     var body: some View {
-        NavigationView {
           ZStack {
               Color(.systemGray6)
                   .opacity(0.35)
@@ -79,9 +78,8 @@ struct MainView: View {
               
 
           }
-          .modifier(HideNavigationView())
 
-      }
+      
     }
 }
 

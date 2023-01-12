@@ -44,6 +44,7 @@ struct ProfileView: View {
                 .onAppear {
                     getProfileImage()
                     getAdditionalProfileInfo()
+                    print(isMyprofile)
                 }
                 .sheet(isPresented: $showSetting) {
                     SettingsView(userDisplayName: $profileDisplayName, userBio: $profileBio, userProfilePicture: $profileImage)

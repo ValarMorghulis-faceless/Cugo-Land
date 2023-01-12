@@ -86,10 +86,17 @@ class ImageManager {
                 }
             }
         }
-        
-        
     }
     
+    func deletePostImage(postID: String) {
+        //let path = getPostImagePath(postID: postID)
+        let folderRef = getPostImagePath(postID: postID)
+        folderRef.delete { error in
+            if error != nil {
+                print(error?.localizedDescription)
+            }
+        }
+    }
     // MARK: PRIVATE FUNCTIONS
     // Functions we call from this file only
     
@@ -151,4 +158,6 @@ class ImageManager {
         }
         
     }
+    
+
 }

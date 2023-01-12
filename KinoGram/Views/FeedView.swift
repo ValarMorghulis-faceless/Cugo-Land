@@ -12,6 +12,7 @@ struct FeedView: View {
     @ObservedObject var posts: PostArrayObject
     var title: String
     
+    
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
@@ -19,6 +20,7 @@ struct FeedView: View {
                     ForEach(posts.dateArray, id: \.self) { post in
                         
                         PostView(post: post, showHeaderAndFooter: true, addheartAnimationToView: true)
+                      
                         
                     }
                 }
